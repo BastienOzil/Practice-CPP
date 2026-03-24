@@ -4,7 +4,7 @@
 class MyClass {
 
     private:
-        int _privateNum; // _avantnom est une norme pour les synthaxes privates
+        int _privateNum; // _ avant le nom est une norme pour les synthaxes privates
         void _privateTest(void) const;
 
 
