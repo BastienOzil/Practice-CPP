@@ -1,4 +1,4 @@
-#include "Class.hpp"
+#include "Generic.hpp"
 #include "Complete.hpp"
 #include "Partiel.hpp"
 #include <iostream>
