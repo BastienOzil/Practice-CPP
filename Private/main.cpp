@@ -1,13 +1,13 @@
 #include "Class.hpp"
 #include <iostream>
 
-int main()
+int	main(void)
 {
-    MyClass instance;
+	MyClass instance;
 
-    instance.publicNum = 42;
-    std::cout << "instance public: " << instance.publicNum << std::endl;
-    instance.publicTest();
+	instance.publicNum = 42;
+	std::cout << "instance public: " << instance.publicNum << std::endl;
+	instance.publicTest();
 
-    return 0;
+	return (0);
 }

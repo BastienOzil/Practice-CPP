@@ -1,16 +1,15 @@
 #pragma once
 #include <iostream>
 
-class MyClass {
+class MyClass
+{
+  private:
+	int _num;
 
-    private:
-        int _num; 
+  public:
+	MyClass(void);
+	~MyClass(void);
 
-    public:
-
-        MyClass(void);
-        ~MyClass(void);
-        
-    int     getNum(void) const;
-    void    setNum(int val);
+	int getNum(void) const;
+	void setNum(int val);
 };

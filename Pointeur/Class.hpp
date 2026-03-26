@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
 
-class MyClass {
+class MyClass
+{
+  public:
+	int num;
 
-    public:
-        int num;
+	MyClass(void);
+	~MyClass(void);
 
-        MyClass(void);
-        ~MyClass(void);
-
-    void    test(void) const;
+	void test(void) const;
 };

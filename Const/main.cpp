@@ -1,11 +1,11 @@
 #include "Class.hpp"
 #include <iostream>
 
-int main()
+int	main(void)
 {
-    MyClass instance(3.14f);
+	MyClass instance(3.14f);
 
-    instance.test(); //ou this->test dans le constructeur
+	instance.test(); // ou this->test dans le constructeur
 
-    return 0;
+	return (0);
 }

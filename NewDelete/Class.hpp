@@ -1,15 +1,14 @@
 #pragma once
 #include <iostream>
 
-class MyClass {
+class MyClass
+{
+  private:
+	std::string _memory;
 
-    private:
-        std::string _memory;
+  public:
+	MyClass(std::string memory);
+	~MyClass(void);
 
-    public:
-        MyClass(std::string memory);
-        ~MyClass(void);
-
-    void    publicTest(void) const;
-
+	void publicTest(void) const;
 };

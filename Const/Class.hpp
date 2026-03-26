@@ -1,15 +1,15 @@
 #pragma once
 #include <iostream>
 
-class MyClass {
+class MyClass
+{
+  public:
+	int num;
+	float const pi;
 
-    public:
-        int         num;
-        float const pi;
+	MyClass(float const f);
+	~MyClass(void);
 
-        MyClass(float const f);
-        ~MyClass(void);
-
-    void    test(void) const; 
-    // rend le fonction et ces variable impossible à modifier
+	void test(void) const;
+	// rend le fonction et ces variable impossible à modifier
 };

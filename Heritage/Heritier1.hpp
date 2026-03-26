@@ -1,24 +1,23 @@
-#pragma once 
-#include <iostream>
+#pragma once
 #include "OriginalClass.hpp"
+#include <iostream>
 
 class Heritier1 : public MyClass
- {
+{
+  private:
+	int _n1;
 
-    private:
-        int _n1;
+  public:
+	Heritier1(void);
+	Heritier1(int const n);
+	Heritier1(Heritier1 const &src);
+	~Heritier1(void);
 
-    public:
-        Heritier1(void);
-        Heritier1(int const n);
-        Heritier1(Heritier1 const & src);
-        ~Heritier1(void);
-
-    Heritier1 &   operator=(Heritier1 const & rhs);
-    int getValue(void) const;
-    void setProtectedValueFromHeritier(int const value);
-    int getProtectedValueFromHeritier(void) const;
-    void addTenToProtected(void);
+	Heritier1 &operator=(Heritier1 const &rhs);
+	int getValue(void) const;
+	void setProtectedValueFromHeritier(int const value);
+	int getProtectedValueFromHeritier(void) const;
+	void addTenToProtected(void);
 };
 
-std::ostream & operator<<(std ::ostream & o, Heritier1 const & i);
+std::ostream &operator<<(std ::ostream &o, Heritier1 const &i);

@@ -2,25 +2,25 @@
 
 MyClass::~MyClass(void)
 {
-	return;
+	return ;
 }
 
 Child1::Child1(void)
 {
-	return;
+	return ;
 }
 
 Child1::~Child1(void)
 {
-	return;
+	return ;
 }
 
 Child2::Child2(void)
 {
-	return;
+	return ;
 }
 
 Child2::~Child2(void)
 {
-	return;
+	return ;
 }

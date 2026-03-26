@@ -1,13 +1,13 @@
 #pragma once //équivalent ifndef define endif, permet un seul call
 #include <iostream>
 
-class MyClass {
+class MyClass
+{
+  public:
+	int cpp;
 
-    public:
-        int cpp;
+	MyClass(void);
+	~MyClass(void);
 
-        MyClass(void);
-        ~MyClass(void);
-
-    void    test(void);
+	void test(void);
 };

@@ -1,9 +1,9 @@
 #include "Class.hpp"
 #include <iostream>
 
-int main()
+int	main(void)
 {
-    MyClass instance;
+	MyClass instance;
 
-    return 0;
+	return (0);
 }

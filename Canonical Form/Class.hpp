@@ -1,7 +1,7 @@
-#pragma once 
+#pragma once
 #include <iostream>
 
-/* une forme canonique est constitué: 
+/* une forme canonique est constitué:
 -constructeur
 -copie
 -Operateur
@@ -9,19 +9,19 @@
 Il sagit d'une norme et donc TOUTES les classes doivent etre canoniques
 */
 
-class MyClass {
+class MyClass
+{
+  private:
+	int _n;
 
-    private:
-        int _n;
+  public:
+	MyClass(void); // constructeur
+	MyClass(int const n);
+	MyClass(MyClass const &src); // copie
+	~MyClass(void);              // destructeur
 
-    public:
-        MyClass(void); // constructeur
-        MyClass(int const n);
-        MyClass(MyClass const & src);// copie
-        ~MyClass(void);// destructeur
-
-    MyClass &   operator=(MyClass const & rhs);// operateur
-    int getValue(void) const;
+	MyClass &operator=(MyClass const &rhs); // operateur
+	int getValue(void) const;
 };
 
-std::ostream & operator<<(std ::ostream & o, MyClass const & i);
+std::ostream &operator<<(std ::ostream &o, MyClass const &i);
