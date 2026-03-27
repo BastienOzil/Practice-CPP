@@ -1,25 +1,25 @@
 #include "Class.hpp"
 
-MyClass::MyClass(void) : _n(0)
+MyClass::MyClass(void) : _n(0)// canonical form
 {
 	std::cout << "Default Consructeur called" << std::endl;
 	return ;
 }
 
-MyClass::MyClass(int const n) : _n(n)
+MyClass::MyClass(int const n) : _n(n)// canonical form
 {
 	std::cout << "Parametric Consructeur called" << std::endl;
 	return ;
 }
 
-MyClass::MyClass(MyClass const &src)
+MyClass::MyClass(MyClass const &src) //canonical form
 {
 	std::cout << "Copy Consructeur called" << std::endl;
 	*this = src;
 	return ;
 }
 
-MyClass::~MyClass(void)
+MyClass::~MyClass(void)// canonical form
 {
 	std::cout << "Destructor called" << std::endl;
 	return ;
